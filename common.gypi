@@ -34,6 +34,7 @@
         },
       },
       'Release': {
+        'defines': [ 'NDEBUG', '_NDEBUG' ],
         'conditions': [
           [ 'OS!="solaris"', {
             'cflags': [ '-fomit-frame-pointer' ]
